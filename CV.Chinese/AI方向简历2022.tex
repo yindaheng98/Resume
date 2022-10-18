@@ -138,42 +138,51 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%     EXPERIENCE
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% TODO 放老师看得懂的东西！
 
 	\section{主要科研项目}
-	\runsubsection{边缘计算环境下实时视频流超分辨率多机协同推理加速}
+	\runsubsection{边缘计算环境下实时视频流超分辨率推断加速}
 	\descript{2021至今}
 	\vspace{\topsep}
 	\begin{tightemize}
-		\item 设计并实现了适合多机并行加速的{\bfseries 并行友好型视频超分辨率神经网络结构}
-		\item 对并行友好型神经网络模型的中间特征进行维度压缩和8bit量化以便在多机间传输
-		\item 基于libvpx源码实现了{\bfseries 超分辨率集成解码器}以降低流畅播放对推断系统吞吐量的要求
-		\item 基于WebRTC设计并实现了{\bfseries 多机协同推断控制机制}
+		\item 拆分多尺度U-net架构实现了适合多机并行加速的{\bfseries 分体式视频超分辨率神经网络结构}
+		\item 对分体式神经网络模型的中间特征进行{\bfseries 维度压缩}和{\bfseries 8bit量化}以便在多机间传输
+		\item 基于压缩视频帧内的信息实现{\bfseries 超分辨率集成解码器}以在无法逐帧推断时保证视频流畅
+		\item 基于视频超分辨率输入帧数可变的性质实现了{\bfseries 多机协同推断控制机制}控制时延和质量
 		\item D. Yin et al., "WAEVSR: Enabling collaborative live video super-resolution in wide-area MEC environment," 已投稿至WWW2023
 	\end{tightemize}
     \sectionsep
 
 	\section{合作科研项目}
-	\runsubsection{在网计算环境中的多机协同推理优化}
-	\descript{2021$\sim$2022}
+	\runsubsection{基于算力网络环境感知的自适应计算路由}
+	\descript{2020.10$\sim$2020.12}
 	\begin{tightemize}
-		\item 主要内容：
+		\item 在算力网络环境下优化神经网络模型的切分以及推断计算设备和数据传输路径的选择
 		\item X. Guo et al., "Exploiting the computational path diversity with in-network computing for MEC," 2022 19th Annual IEEE International Conference on Sensing, Communication, and Networking (SECON), 2022, pp. 1-9.
-		\item 我的贡献：
+		\item 我的贡献：推断控制实验系统开发 \href{https://github.com/yindaheng98/DNet}{github.com/yindaheng98/DNet}
 	\end{tightemize}
     \sectionsep
 
-	\runsubsection{在网计算场景下多机协同推理优化}
-	\descript{2020$\sim$2022}
+	\runsubsection{边缘计算环境下的多目标跟踪模型推理加速}
+	\descript{2021$\sim$2022}
 	\begin{tightemize}
 		\item 主要内容：
-		\item 我的贡献：目标跟踪模型的量化加速
 		\item M. Liu et al., "Accelerating Multi-Object Tracking in Edge Computing Environment with Time-Spatial Optimization," 2021 Ninth International Conference on Advanced Cloud and Big Data (CBD), 2022, pp. 279-284.
 		\item A. Tang et al., "Accelerate High-resolution Multi-Object Tracking on Edge Devices with Region-aware Parallel Inference," 已投稿至WWW2023
+		\item 我的贡献：目标跟踪模型的量化加速
 	\end{tightemize}
     \sectionsep
 	
 
     \section{主要实践项目}
+	\runsubsection{\bf 中国移动}
+	\descript{2022.03$\sim$2022.5}
+	\begin{tightemize}
+		\item 基于TensorRT对图像超分辨率算法ELAN进行量化加速
+		\item 项目地址：\href{https://github.com/liu-mengyang/trt-elan}{github.com/liu-mengyang/trt-elan}
+	\end{tightemize}
+	\sectionsep
+
 	\runsubsection{\bf TensorRT Hackathon 2022 竞赛 优胜奖}
 	\descript{2022.03$\sim$2022.5}
 	\begin{tightemize}
