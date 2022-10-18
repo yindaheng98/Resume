@@ -73,7 +73,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.2\textwidth}
+\begin{minipage}[t]{0.21\textwidth}
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%     EDUCATION
@@ -84,6 +84,11 @@
 	\descript{学术学位硕士}
 	\descript{计算机科学与技术}
 	\location{2020.09-2023.06}
+    \sectionsep
+    \subsection{\fontsize{10pt}{10pt}\selectfont{Cambridge University}}
+	\descript{暑期游学}
+	\descript{Global Innovation and Leaderdship}
+	\location{2017.08-2017.09}
     \sectionsep
 	\subsection{江南大学}
 	\descript{工学学士学位}
@@ -119,10 +124,17 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 	\section{链接}
-	\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}l}
-		Github & \href{https://github.com/yindaheng98}{\bf @yindaheng98} \\
-		Blog  & \href{http://www.yindaheng98.top}{\bf yindaheng98.top} \\
-	\end{tabular*}
+	Github\href{https://github.com/yindaheng98}{\bf @yindaheng98} \\
+	Blog:\href{http://www.yindaheng98.top}{\bf yindaheng98.top} \\
+	\sectionsep
+
+	\section{技能}
+	Pytorch \\
+	CUDA \textbullet{} TensorRT \\
+	WebRTC \textbullet{} LibVPX \\
+	Docker \textbullet{} Kubernetes \\
+	Git \textbullet{} Github \textbullet{} GitLab \\
+	\LaTeX \textbullet{} Golang \textbullet{} Java \\
 	\sectionsep
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -177,6 +189,7 @@
     \section{主要实践项目}
 	\runsubsection{\bf 竞赛 TensorRT Hackathon 2022 优胜奖}
 	\descript{2022.03$\sim$2022.5}
+	\location{NVIDIA | 阿里云天池}
 	\begin{tightemize}
 		\item 基于TensorRT对超分辨率神经网络模型ELAN进行float16和int8量化加速
 		\item 在float16量化后的网络结构中搜索并排除对精度影响较大的层，使得误差下降了75\%
@@ -187,32 +200,34 @@
 
 	\runsubsection{\bf 横向课题 动态网络下边缘智能云边端协同任务调度技术研究}
 	\descript{2021.09至今}
+	\location{中国移动有限公司 | 东南大学}
 	\begin{tightemize}
 		\item 负责整体技术选型、系统架构和协作机制设计以及系统运维，并主导网络仿真模块开发
 		\item 实践了在开源项目中学习到的大型软件设计思路和协作开发机制
-		\item 设计并实现了基于Kubernetes和Nginx的微服务架构
-		\item 设计并运作了基于Gitlab的协作开发流程和基于Docker的联合调试与交付流程
+		\item 设计并实现了基于Kubernetes和Nginx的微服务架构并以此整合团队成员的开发工作
+		\item 设计并主导运作了基于Gitlab的协作开发流程和基于Docker的联合调试与交付流程
 	\end{tightemize}
 	\sectionsep
 
 	\runsubsection{\bf 竞赛 TensorRT Hackathon 2021 三等奖}
 	\descript{2021.03$\sim$2021.5}
+	\location{NVIDIA | 阿里云天池}
 	\begin{tightemize}
 		\item 基于TensorRT对多目标跟踪算法FairMOT进行量化加速
-		\item 编写TensorRT插件实现16位浮点型DCNv2算子
+		\item 编写TensorRT插件实现16位浮点型DCNv2算子，单视频输入计算速度提升2.36倍
 		\item 将Pytorch模型参数通过API导入TensorRT中并完成对齐
 		\item 项目地址：\href{https://github.com/liu-mengyang/trt-fairmot}{github.com/liu-mengyang/trt-fairmot}
 	\end{tightemize}
 	\sectionsep
 
-	%\runsubsection{\bf 横向课题 南京钢铁}
-	%\descript{2021.04$\sim$2021.09}
-	%\begin{tightemize}
-	%	\item 我的工作：技术选型、架构设计、协作机制设计、项目技术统筹
-	%	\item 实践了在开源项目中学习到的大型软件设计思路和协作机制
-	%	\item 基于项目实际情况设计了完善且具有较低学习成本的技术架构和较低沟通成本的开发流程
-	%\end{tightemize}
-	%\sectionsep
+	\runsubsection{\bf 横向课题 面向工业互联网的智能云端协作关键技术及系统}
+	\descript{2021.04$\sim$2021.09}
+	\location{国家重点研发计划 | 南京南钢钢铁联合有限公司 | 东南大学}
+	\begin{tightemize}
+		\item 负责轧钢厂产线数据监视系统的开发工作
+		\item 基于Unity和Node.js实现了轧钢厂生产线数据在三维产线模型中的实时展示
+	\end{tightemize}
+	\sectionsep
 
 	%\runsubsection{机器学习算法库mlpack在神威·太湖之光系统上的移植}
 	%\descript{}
@@ -224,19 +239,13 @@
 	%\end{tightemize}
     %\sectionsep
 
-	\section{其他实践项目}
+	\section{本科期间的竞赛和奖学金}
     \begin{tabular}{lll}
         %2019.05 & 全国大学生服务外包创新创业大赛 & 三等奖 \\
         %2019.04 & 美国大学生数学建模竞赛 & S奖 \\
         2018.09 & 全国大学生数学建模竞赛 & 国家级二等奖 \\
         2017.11 & 第九届全国大学生数学竞赛（非数学类） & 江苏赛区二等奖 \\
-        2017.05 & 江苏赛普通高等学校第十四届数学竞赛 & 本科一级组一等奖\\
-	\end{tabular}
-    \sectionsep
-
-	\section{奖学金}
-    \begin{tabular}{lll}
-        2018.11 & 江南大学2016-2017学年学业奖学金 & 一等 \\
+        2017.05 & 江苏省普通高等学校第十四届数学竞赛 & 本科一级组一等奖\\
         2017.11 & 2016-2017年度国家奖学金 & \\
 	\end{tabular}
     \sectionsep
