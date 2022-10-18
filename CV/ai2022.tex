@@ -1,0 +1,197 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+    
+\pagestyle{fancy}
+\fancyhf{}
+    
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Yin}{Daheng}{ \urlstyle{same}\href{mailto:yindaheng98@seu.edu.cn}{yindaheng98@seu.edu.cn} | +86 188 5189 9135 | Southeast University, Nanjing, Jiangsu}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.22\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\subsection{Southeast University}
+\descript{Master of Science}
+\descript{Major: Network Engineering}
+\location{2020.09$\sim$2023.06}
+\sectionsep
+\subsection{\fontsize{10pt}{10pt}\selectfont{Cambridge University}}
+\descript{Overseas study tour}
+\location{2017.08-2017.09}
+\sectionsep
+\subsection{Jiangnan University}
+\descript{Bachelor of Engineering}
+\descript{Major: IoT Engineering}
+\location{2016.09$\sim$2020.09}
+\sectionsep
+
+\section{Transcript}
+\begin{tabular*}{\linewidth}{lr@{\extracolsep{\fill}}c@{\extracolsep{\fill}}l}
+    GPA(BEng)&3.59&/&4 \\
+    GPA(MSc)&81.69&/&100 \\
+\end{tabular*}
+\sectionsep
+\section{English}
+\begin{tabular}{ll}
+    IELTS & 6.5 \\
+    CET6  & 576 \\
+\end{tabular}
+\sectionsep
+
+\section{Skills}
+Pytorch \\
+CUDA \textbullet{} TensorRT \\
+WebRTC \textbullet{} LibVPX \\
+Docker \textbullet{} Kubernetes \\
+Git \textbullet{} Github \textbullet{} GitLab \\
+\LaTeX \textbullet{} Golang \textbullet{} Java \\
+
+\section{Links}
+Github\href{https://github.com/yindaheng98}{\bf @yindaheng98} \\
+Blog:\href{http://www.yindaheng98.top}{\bf yindaheng98.top} \\
+\sectionsep
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.76\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research \& Development}
+\runsubsection{Acclerate live video super-resolution in edge computing}
+\descript{2021.06$\sim$currently}
+\vspace{\topsep}
+\begin{tightemize}
+    \item a novel parallel-friendly DNN architecture derived from a specific but widely used DNN structure U-net
+    \item developed an distributed inference controller framework based on the \emph{\bfseries variable-size sliding window} to control the computation and transmission latency by adjusting the batch size of the DNN input
+    \item SR-integrated video decoder
+    \item Related paper \textit{WAEVSR: Enabling collaborative live video
+    super‑resolution in wide‑area MEC environment} is submitted to WWW 2023
+\end{tightemize}
+\sectionsep
+
+
+\section{Cooperated Research \& Development}
+\runsubsection{Develop new evaluation methods for over-hydration based on bioimpedance analysis and data mining}
+\descript{}
+\location{2018.12$\sim$currently | Jiangnan University/Department of Nephrology, Wuxi People's Hospital}
+\begin{tightemize}
+    \item a novel parallel-friendly DNN architecture derived from a specific but widely used DNN structure U-net
+    \item developed an distributed inference controller framework based on the \emph{\bfseries variable-size sliding window} to control the computation and transmission latency by adjusting the batch size of the DNN input
+    \item SR-integrated video decoder
+    \item Related paper: \textit{X. Guo et al., "Exploiting the computational path diversity with in-network computing for MEC," 2022 19th Annual IEEE International Conference on Sensing, Communication, and Networking (SECON), 2022, pp. 1-9.}
+\end{tightemize}
+\sectionsep
+
+\section{Projects}
+\runsubsection{\href{http://yindaheng98.top:8888/ExpertField}{\bf ExpertField}}
+	\descript{2019.03$\sim$currently}
+    \begin{tightemize}
+        \item Aiming at field data collection, both artificial(Android App) and automatic(STM32)
+        \item 9 cooperators, nearly 10,000 lines of code, a complete IoT system
+		\item Will be deployed in Institute of Plant Physiology \& Ecology, CAS
+		\item A fast deployable combined microservice system based on Docker VM
+	\end{tightemize}
+	\sectionsep
+
+	\runsubsection{\href{https://github.com/yindaheng98/GANomaly-Tensorflow}{\bf GANomaly-Tensorflow}}
+	\descript{2018.10$\sim$2018.11}
+	\begin{tightemize}
+		\item Implement GANomaly with Tensorflow, for camera abnormality judgment
+		\item Use Opencv and Tensorflow to convert video format to tfrecord dataset
+	\end{tightemize}
+    \sectionsep
+    
+	\runsubsection{\href{http://yindaheng98.top:8888/Calendars/login.html
+    }{\bf Calendars}}
+	\descript{2017.10$\sim$2017.12}
+	\begin{tightemize}
+		\item A cross-platform web application that integrates daily affairs, curriculum, achievement management, and project planning
+		\item 5 cooperators, 4000 lines of code, 2 aliyun servers and 1 physical server
+		\item Implemented multi-person instant process graph editing and a high-flow curriculum query component using Redis blocking queue and long polling
+	\end{tightemize}
+	\sectionsep
+
+\section{Awards \& Scholarship} 
+\begin{tabular}{lll}
+    2018.09 & National College Mathematical Contest in Modeling & 2nd Prize(National) \\
+    2017.11 & 9th National College Mathematical Contest & 2nd Prize(Provincial) \\
+    2017.11 & China National Scholarship (2016-2017) & \\
+    2017.05 & 14th Jiangsu College Mathematical Contest & 1st Prize\\
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
