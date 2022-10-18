@@ -145,34 +145,34 @@
 	\descript{2021至今}
 	\vspace{\topsep}
 	\begin{tightemize}
-		\item 拆分多尺度U-net架构实现了适合多机并行加速的{\bfseries 分体式视频超分辨率神经网络结构}
-		\item 对分体式神经网络模型的中间特征进行{\bfseries 维度压缩}和{\bfseries 8bit量化}以便在多机间传输
-		\item 基于压缩视频帧内的信息实现{\bfseries 超分辨率集成解码器}以在无法逐帧推断时保证视频流畅
-		\item 基于视频超分辨率输入帧数可变的性质实现了{\bfseries 多机协同推断控制机制}控制时延和质量
+		\item 改进常见的多尺度U-net结构实现适合多机并行加速的{\bfseries 分体式视频超分辨率神经网络}
+		\item 对神经网络模型的中间特征进行{\bfseries 维度压缩}和{\bfseries 8bit量化}后编码为视频以便在多机间传输
+		\item 改进视频解码器实现高清帧和低清流合成高清流的功能以在无法逐帧推断时保证视频流畅
+		\item 基于模型输入帧数可变的性质自适应地控制推断过程以在动态的边缘环境中保障用户体验
 		\item D. Yin et al., "WAEVSR: Enabling collaborative live video super-resolution in wide-area MEC environment," 已投稿至WWW2023
 	\end{tightemize}
     \sectionsep
 
 	\section{合作科研项目}
+	\runsubsection{边缘计算环境下的多目标跟踪模型推理加速}
+	\descript{2021.03$\sim$2021.05}
+	\begin{tightemize}
+		\item 在边缘计算环境下优化多目标跟踪任务的模型选择和图像区域划分策略
+		\item M. Liu et al., "Accelerating Multi-Object Tracking in Edge Computing Environment with Time-Spatial Optimization," 2021 Ninth International Conference on Advanced Cloud and Big Data (CBD), 2022, pp. 279-284.
+		\item A. Tang et al., "Accelerate High-resolution Multi-Object Tracking on Edge Devices with Region-aware Parallel Inference," 已投稿至WWW2023
+		\item 我的贡献：多目标跟踪模型的量化加速
+	\end{tightemize}
+    \sectionsep
+	
 	\runsubsection{基于算力网络环境感知的自适应计算路由}
 	\descript{2020.10$\sim$2020.12}
 	\begin{tightemize}
-		\item 在算力网络环境下优化神经网络模型的切分以及推断计算设备和数据传输路径的选择
+		\item 在算力网络环境下优化神经网络模型的切分以及计算设备和数据传输路径的选择策略
 		\item X. Guo et al., "Exploiting the computational path diversity with in-network computing for MEC," 2022 19th Annual IEEE International Conference on Sensing, Communication, and Networking (SECON), 2022, pp. 1-9.
 		\item 我的贡献：推断控制实验系统开发 \href{https://github.com/yindaheng98/DNet}{github.com/yindaheng98/DNet}
 	\end{tightemize}
     \sectionsep
 
-	\runsubsection{边缘计算环境下的多目标跟踪模型推理加速}
-	\descript{2021$\sim$2022}
-	\begin{tightemize}
-		\item 主要内容：
-		\item M. Liu et al., "Accelerating Multi-Object Tracking in Edge Computing Environment with Time-Spatial Optimization," 2021 Ninth International Conference on Advanced Cloud and Big Data (CBD), 2022, pp. 279-284.
-		\item A. Tang et al., "Accelerate High-resolution Multi-Object Tracking on Edge Devices with Region-aware Parallel Inference," 已投稿至WWW2023
-		\item 我的贡献：目标跟踪模型的量化加速
-	\end{tightemize}
-    \sectionsep
-	
 
     \section{主要实践项目}
 	\runsubsection{\bf 中国移动}
@@ -186,7 +186,9 @@
 	\runsubsection{\bf TensorRT Hackathon 2022 竞赛 优胜奖}
 	\descript{2022.03$\sim$2022.5}
 	\begin{tightemize}
-		\item 基于TensorRT对图像超分辨率算法ELAN进行量化加速
+		\item 基于TensorRT对超分辨率神经网络模型ELAN进行float16和int8量化加速
+		\item 在float16量化后的网络结构中搜索并排除对精度影响较大的层，使得相对误差下降了75\%
+		\item 对模型进行int8 QAT量化，在保证输出图像质量的前提下达到50\%的加速比
 		\item 项目地址：\href{https://github.com/liu-mengyang/trt-elan}{github.com/liu-mengyang/trt-elan}
 	\end{tightemize}
 	\sectionsep
@@ -194,7 +196,9 @@
 	\runsubsection{\bf TensorRT Hackathon 2021 竞赛 三等奖}
 	\descript{2021.03$\sim$2021.5}
 	\begin{tightemize}
-		\item 基于TensorRT对视频跟踪算法FairMOT进行量化加速
+		\item 基于TensorRT对多目标跟踪算法FairMOT进行量化加速
+		\item 将Pytorch模型参数通过API导入TensorRT中并完成对齐
+		\item 编写TensorRT插件实现16位浮点型DCNv2算子
 		\item 项目地址：\href{https://github.com/liu-mengyang/trt-fairmot}{github.com/liu-mengyang/trt-fairmot}
 	\end{tightemize}
 	\sectionsep
@@ -212,7 +216,7 @@
 	\section{其他实践项目}
     \begin{tabular}{lll}
         %2019.05 & 全国大学生服务外包创新创业大赛 & 三等奖 \\
-        2019.04 & 美国大学生数学建模竞赛 & S奖 \\
+        %2019.04 & 美国大学生数学建模竞赛 & S奖 \\
         2018.09 & 全国大学生数学建模竞赛 & 国家级二等奖 \\
         2017.11 & 第九届全国大学生数学竞赛（非数学类） & 江苏赛区二等奖 \\
         2017.05 & 江苏赛普通高等学校第十四届数学竞赛 & 本科一级组一等奖\\
