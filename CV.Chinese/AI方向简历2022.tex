@@ -141,35 +141,35 @@
 	% TODO 放老师看得懂的东西！
 
 	\section{主要科研项目}
-	\runsubsection{边缘计算环境下实时视频流超分辨率推断加速}
-	\descript{2021至今}
+	\runsubsection{\bf 边缘计算环境下实时视频流超分辨率推断加速}
+	\descript{2021.06至今}
 	\vspace{\topsep}
 	\begin{tightemize}
-		\item 改进常见的多尺度U-net结构实现适合多机并行加速的{\bfseries 分体式视频超分辨率神经网络}
-		\item 对神经网络模型的中间特征进行{\bfseries 维度压缩}和{\bfseries int8量化}后编码为视频以便在多机间传输
+		\item 改进常见的多尺度U-net结构实现适合多机并行加速的分体式视频超分辨率神经网络
+		\item 对神经网络模型的中间特征进行维度压缩和int8量化后编码为视频以便在多机间传输
 		\item 改进视频解码器实现高清帧和低清流合成高清流的功能以在无法逐帧推断时保证视频流畅
 		\item 基于模型输入帧数可变的性质自适应地控制推断过程以在动态的边缘环境中保障用户体验
-		\item D. Yin et al., "WAEVSR: Enabling collaborative live video super-resolution in wide-area MEC environment," 已投稿至WWW2023
+		\item 相关论文：D. Yin et al., "WAEVSR: Enabling collaborative live video super-resolution in wide-area MEC environment," 已投稿至WWW2023
 	\end{tightemize}
     \sectionsep
 
 	\section{合作科研项目}
-	\runsubsection{边缘计算环境下的多目标跟踪模型推理加速}
-	\descript{2021.03$\sim$2021.05}
-	\begin{tightemize}
-		\item 在边缘计算环境下优化多目标跟踪任务的模型选择和图像区域划分策略
-		\item M. Liu et al., "Accelerating Multi-Object Tracking in Edge Computing Environment with Time-Spatial Optimization," 2021 Ninth International Conference on Advanced Cloud and Big Data (CBD), 2022, pp. 279-284.
-		\item A. Tang et al., "Accelerate High-resolution Multi-Object Tracking on Edge Devices with Region-aware Parallel Inference," 已投稿至WWW2023
-		\item 我的贡献：多目标跟踪模型的量化加速
-	\end{tightemize}
-    \sectionsep
+	%\runsubsection{边缘计算环境下的多目标跟踪模型推理加速}
+	%\descript{2021.03$\sim$2021.05}
+	%\begin{tightemize}
+	%	\item 在边缘计算环境下优化多目标跟踪任务的模型选择和图像区域划分策略
+	%	\item M. Liu et al., "Accelerating Multi-Object Tracking in Edge Computing Environment with Time-Spatial Optimization," 2021 Ninth International Conference on Advanced Cloud and Big Data (CBD), 2022, pp. 279-284.
+	%	\item A. Tang et al., "Accelerate High-resolution Multi-Object Tracking on Edge Devices with Region-aware Parallel Inference," 已投稿至WWW2023
+	%	\item 我的贡献：多目标跟踪模型的量化加速
+	%\end{tightemize}
+    %\sectionsep
 	
-	\runsubsection{基于算力网络环境感知的自适应计算路由}
+	\runsubsection{\bf 基于算力网络环境感知的自适应计算路由}
 	\descript{2020.10$\sim$2020.12}
 	\begin{tightemize}
 		\item 在算力网络环境下优化神经网络模型的切分以及计算设备和数据传输路径的选择策略
-		\item X. Guo et al., "Exploiting the computational path diversity with in-network computing for MEC," 2022 19th Annual IEEE International Conference on Sensing, Communication, and Networking (SECON), 2022, pp. 1-9.
-		\item 我的贡献：推断控制实验系统开发 \href{https://github.com/yindaheng98/DNet}{github.com/yindaheng98/DNet}
+		\item 合作贡献：推断控制实验系统的开发与维护 (\href{https://github.com/yindaheng98/DNet}{github.com/yindaheng98/DNet})
+		\item 相关论文：X. Guo et al., "Exploiting the computational path diversity with in-network computing for MEC," 2022 19th Annual IEEE International Conference on Sensing, Communication, and Networking (SECON), 2022, pp. 1-9.
 	\end{tightemize}
     \sectionsep
 
@@ -179,8 +179,8 @@
 	\descript{2022.03$\sim$2022.5}
 	\begin{tightemize}
 		\item 基于TensorRT对超分辨率神经网络模型ELAN进行float16和int8量化加速
-		\item 在float16量化后的网络结构中搜索并排除对精度影响较大的层，使得相对误差下降了75\%
-		\item 对模型进行int8 QAT量化，在保证输出图像质量的前提下达到50\%的加速比
+		\item 在float16量化后的网络结构中搜索并排除对精度影响较大的层，使得误差下降了75\%
+		\item 对模型进行int8 QAT量化，在保证输出图像质量不变的前提下达到50\%的加速比
 		\item 项目地址：\href{https://github.com/liu-mengyang/trt-elan}{github.com/liu-mengyang/trt-elan}
 	\end{tightemize}
 	\sectionsep
@@ -188,9 +188,10 @@
 	\runsubsection{\bf 横向课题 动态网络下边缘智能云边端协同任务调度技术研究}
 	\descript{2021.09至今}
 	\begin{tightemize}
-		\item 我的工作：技术选型、架构设计、协作机制设计、项目技术统筹
-		\item 实践了在开源项目中学习到的大型软件设计思路和协作机制
-		\item 基于项目实际情况设计了完善且具有较低学习成本的技术架构和较低沟通成本的开发流程
+		\item 负责整体技术选型、系统架构和协作机制设计以及系统运维，并主导网络仿真模块开发
+		\item 实践了在开源项目中学习到的大型软件设计思路和协作开发机制
+		\item 设计并实现了基于Kubernetes和Nginx的微服务架构
+		\item 设计并运作了基于Gitlab的协作开发流程和基于Docker的联合调试与交付流程
 	\end{tightemize}
 	\sectionsep
 
@@ -198,11 +199,20 @@
 	\descript{2021.03$\sim$2021.5}
 	\begin{tightemize}
 		\item 基于TensorRT对多目标跟踪算法FairMOT进行量化加速
-		\item 将Pytorch模型参数通过API导入TensorRT中并完成对齐
 		\item 编写TensorRT插件实现16位浮点型DCNv2算子
+		\item 将Pytorch模型参数通过API导入TensorRT中并完成对齐
 		\item 项目地址：\href{https://github.com/liu-mengyang/trt-fairmot}{github.com/liu-mengyang/trt-fairmot}
 	\end{tightemize}
 	\sectionsep
+
+	%\runsubsection{\bf 横向课题 南京钢铁}
+	%\descript{2021.04$\sim$2021.09}
+	%\begin{tightemize}
+	%	\item 我的工作：技术选型、架构设计、协作机制设计、项目技术统筹
+	%	\item 实践了在开源项目中学习到的大型软件设计思路和协作机制
+	%	\item 基于项目实际情况设计了完善且具有较低学习成本的技术架构和较低沟通成本的开发流程
+	%\end{tightemize}
+	%\sectionsep
 
 	%\runsubsection{机器学习算法库mlpack在神威·太湖之光系统上的移植}
 	%\descript{}
