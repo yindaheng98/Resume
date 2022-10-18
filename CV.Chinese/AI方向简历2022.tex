@@ -146,7 +146,7 @@
 	\vspace{\topsep}
 	\begin{tightemize}
 		\item 改进常见的多尺度U-net结构实现适合多机并行加速的{\bfseries 分体式视频超分辨率神经网络}
-		\item 对神经网络模型的中间特征进行{\bfseries 维度压缩}和{\bfseries 8bit量化}后编码为视频以便在多机间传输
+		\item 对神经网络模型的中间特征进行{\bfseries 维度压缩}和{\bfseries int8量化}后编码为视频以便在多机间传输
 		\item 改进视频解码器实现高清帧和低清流合成高清流的功能以在无法逐帧推断时保证视频流畅
 		\item 基于模型输入帧数可变的性质自适应地控制推断过程以在动态的边缘环境中保障用户体验
 		\item D. Yin et al., "WAEVSR: Enabling collaborative live video super-resolution in wide-area MEC environment," 已投稿至WWW2023
@@ -175,15 +175,7 @@
 
 
     \section{主要实践项目}
-	\runsubsection{\bf 中国移动}
-	\descript{2022.03$\sim$2022.5}
-	\begin{tightemize}
-		\item 基于TensorRT对图像超分辨率算法ELAN进行量化加速
-		\item 项目地址：\href{https://github.com/liu-mengyang/trt-elan}{github.com/liu-mengyang/trt-elan}
-	\end{tightemize}
-	\sectionsep
-
-	\runsubsection{\bf TensorRT Hackathon 2022 竞赛 优胜奖}
+	\runsubsection{\bf 竞赛 TensorRT Hackathon 2022 优胜奖}
 	\descript{2022.03$\sim$2022.5}
 	\begin{tightemize}
 		\item 基于TensorRT对超分辨率神经网络模型ELAN进行float16和int8量化加速
@@ -193,7 +185,16 @@
 	\end{tightemize}
 	\sectionsep
 
-	\runsubsection{\bf TensorRT Hackathon 2021 竞赛 三等奖}
+	\runsubsection{\bf 横向课题 动态网络下边缘智能云边端协同任务调度技术研究}
+	\descript{2021.09至今}
+	\begin{tightemize}
+		\item 我的工作：技术选型、架构设计、协作机制设计、项目技术统筹
+		\item 实践了在开源项目中学习到的大型软件设计思路和协作机制
+		\item 基于项目实际情况设计了完善且具有较低学习成本的技术架构和较低沟通成本的开发流程
+	\end{tightemize}
+	\sectionsep
+
+	\runsubsection{\bf 竞赛 TensorRT Hackathon 2021 三等奖}
 	\descript{2021.03$\sim$2021.5}
 	\begin{tightemize}
 		\item 基于TensorRT对多目标跟踪算法FairMOT进行量化加速
