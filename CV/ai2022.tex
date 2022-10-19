@@ -134,11 +134,11 @@ Blog:\href{http://www.yindaheng98.top}{\bf yindaheng98.top} \\
 \descript{2021.06$\sim$currently}
 \vspace{\topsep}
 \begin{tightemize}
-    \item a novel parallel-friendly DNN architecture derived from a specific but widely used DNN structure U-net
-    \item developed an distributed inference controller framework based on the \emph{\bfseries variable-size sliding window} to control the computation and transmission latency by adjusting the batch size of the DNN input
-    \item SR-integrated video decoder
-    \item Related paper \textit{WAEVSR: Enabling collaborative live video
-    super‑resolution in wide‑area MEC environment} is submitted to WWW 2023
+    \item Derived a parallel-friendly DNN architecture from multi-scale feature extraction structure for better multi-device acceleration in edge environment. % OK
+    \item Dimensionally compressed and int8 quantized intermediate features of the DNN and encoded features into video for transmission among multiple devices. % OK
+    \item Enhance the video decoder to combine low-framerate high-definition stream and high-framerate low-definition stream into high-framerate high-definition streams for smooth video playback when frame-by-frame super-resolution inference is not supported. % OK
+    \item Control the inference process adaptively based on the variable batch size of DNN input and enhanced video decoder to achieve best video quality under a specific latency bound in dynamic edge environments.
+    \item Related paper \textit{D. Yin et al., "WAEVSR: Enabling collaborative live video super-resolution in wide-area MEC environment,"} is submitted to WWW 2023
 \end{tightemize}
 \sectionsep
 
