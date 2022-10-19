@@ -160,7 +160,7 @@ Blog:\href{http://www.yindaheng98.top}{\bf yindaheng98.top} \\
 \begin{tightemize}
     \item Quantize a speech recognition DNN WeNet and a super-resolution DNN ELAN to FLOAT16 and INT8 using TensorRT.
     \item Implement FLOAT16 BatchNorm as a TensorRT plugin to replace native TensorRT BatchNorm kernel with precision issues.
-    \item Search and omit FLOAT16 quantized ELAN structure layers that have the greatest impact on precision, which decrease the error by 75\%.
+    \item Search and omit the quantization on those layers that have the significant impact on precision in FLOAT16 quantized ELAN structure, which decrease the error by 75\% and have similiar speedup.
     \item Quantized ELAN to INT8 with QAT, which achieved 2$\times$ speedup.
     \item Github: \href{https://github.com/liu-mengyang/trt-wenet}{github.com/liu-mengyang/trt-wenet} and \href{https://github.com/liu-mengyang/trt-elan}{github.com/liu-mengyang/trt-elan}
 \end{tightemize}
@@ -177,7 +177,7 @@ Blog:\href{http://www.yindaheng98.top}{\bf yindaheng98.top} \\
 \end{tightemize}
 \sectionsep
 
-\section{Awards \& Scholarship} 
+\section{Contest \& Scholarship During Undergraduate} 
 \begin{tabular}{lll}
     2018.09 & National College Mathematical Contest in Modeling & 2nd Prize(National) \\
     2017.11 & 9th National College Mathematical Contest & 2nd Prize(Provincial) \\
