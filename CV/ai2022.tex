@@ -123,7 +123,7 @@ Blog:\href{http://www.yindaheng98.top}{\bf yindaheng98.top} \\
 
 \end{minipage} 
 \hfill
-\begin{minipage}[t]{0.76\textwidth} 
+\begin{minipage}[t]{0.77\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
@@ -148,39 +148,34 @@ Blog:\href{http://www.yindaheng98.top}{\bf yindaheng98.top} \\
 \descript{2020.10$\sim$2020.12}
 \begin{tightemize}
     \item Optimize the strategy of: 1) DNN layer segmentation for distributed deployment, 2) computing device selection, 3) data transmission path selection.
-    \item My contribution: Development of DNN inference control testbed (\href{https://github.com/yindaheng98/DNet}{DNet}). Scheduling and synchronizing inference process among multiple computing devices.
+    \item My contribution: Development of DNN inference control testbed (\href{https://github.com/yindaheng98/DNet}{DNet}), which can schedule and synchronize inference process among multiple computing devices.
     \item Related paper: \textit{X. Guo et al., "Exploiting the computational path diversity with in-network computing for MEC," 2022 19th Annual IEEE International Conference on Sensing, Communication, and Networking (SECON), 2022, pp. 1-9.}
 \end{tightemize}
 \sectionsep
 
 \section{Projects}
-\runsubsection{\href{http://yindaheng98.top:8888/ExpertField}{\bf ExpertField}}
-	\descript{2019.03$\sim$currently}
-    \begin{tightemize}
-        \item Aiming at field data collection, both artificial(Android App) and automatic(STM32)
-        \item 9 cooperators, nearly 10,000 lines of code, a complete IoT system
-		\item Will be deployed in Institute of Plant Physiology \& Ecology, CAS
-		\item A fast deployable combined microservice system based on Docker VM
-	\end{tightemize}
-	\sectionsep
+\runsubsection{\bf Contest TensorRT Hackathon 2022 \quad Winner Prize}
+\descript{2022.03$\sim$2022.5}
+\location{NVIDIA | Alibaba Cloud TIANCHI}
+\begin{tightemize}
+    \item Quantize a speech recognition DNN WeNet and a super-resolution DNN ELAN to FLOAT16 and INT8 using TensorRT.
+    \item Implement FLOAT16 BatchNorm as a TensorRT plugin to replace native TensorRT BatchNorm kernel with precision issues.
+    \item Search and omit FLOAT16 quantized ELAN structure layers that have the greatest impact on precision, which decrease the error by 75\%.
+    \item Quantized ELAN to INT8 with QAT, which achieved 2$\times$ speedup.
+    \item Github: \href{https://github.com/liu-mengyang/trt-wenet}{github.com/liu-mengyang/trt-wenet} and \href{https://github.com/liu-mengyang/trt-elan}{github.com/liu-mengyang/trt-elan}
+\end{tightemize}
+\sectionsep
 
-	\runsubsection{\href{https://github.com/yindaheng98/GANomaly-Tensorflow}{\bf GANomaly-Tensorflow}}
-	\descript{2018.10$\sim$2018.11}
-	\begin{tightemize}
-		\item Implement GANomaly with Tensorflow, for camera abnormality judgment
-		\item Use Opencv and Tensorflow to convert video format to tfrecord dataset
-	\end{tightemize}
-    \sectionsep
-    
-	\runsubsection{\href{http://yindaheng98.top:8888/Calendars/login.html
-    }{\bf Calendars}}
-	\descript{2017.10$\sim$2017.12}
-	\begin{tightemize}
-		\item A cross-platform web application that integrates daily affairs, curriculum, achievement management, and project planning
-		\item 5 cooperators, 4000 lines of code, 2 aliyun servers and 1 physical server
-		\item Implemented multi-person instant process graph editing and a high-flow curriculum query component using Redis blocking queue and long polling
-	\end{tightemize}
-	\sectionsep
+\runsubsection{\bf Contest TensorRT Hackathon 2021 \quad 3rd Prize}
+\descript{2021.03$\sim$2021.5}
+\location{NVIDIA | Alibaba Cloud TIANCHI}
+\begin{tightemize}
+    \item Quantize a multi object tracking DNN FairMOT to FLOAT16 and INT8 using TensorRT.
+    \item Implement FLOAT16 DCNv2 kernel as a TensorRT plugin, which achieved 2.36$\times$ speedup.
+    \item Import and align model parameters from Pytorch into TensorRT through API.
+    \item Github: \href{https://github.com/liu-mengyang/trt-fairmot}{github.com/liu-mengyang/trt-fairmot}
+\end{tightemize}
+\sectionsep
 
 \section{Awards \& Scholarship} 
 \begin{tabular}{lll}

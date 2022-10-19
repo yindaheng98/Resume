@@ -190,7 +190,8 @@
 	\descript{2022.03$\sim$2022.5}
 	\location{NVIDIA | 阿里云天池}
 	\begin{tightemize}
-		\item 基于TensorRT对超分辨率神经网络模型ELAN进行float16和int8量化加速
+		\item 基于TensorRT对语音识别模型WeNet和超分辨率模型ELAN进行float16和int8量化加速
+		\item 编写TensorRT插件实现16位浮点型BatchNorm以替换TensorRT中存在精度问题的算子
 		\item 在float16量化后的网络结构中搜索并排除对精度影响较大的层，使得误差下降了75\%
 		\item 对模型进行int8 QAT量化，在保证输出图像质量不变的前提下达到50\%的加速比
 		\item 项目地址：\href{https://github.com/liu-mengyang/trt-elan}{github.com/liu-mengyang/trt-elan}
