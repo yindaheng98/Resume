@@ -82,8 +82,9 @@
 \section{Education} 
 \subsection{Southeast University}
 \descript{Master of Science}
-\descript{Major: Network Engineering}
+\descript{Major: Computer Science}
 \location{2020.09$\sim$2023.06}
+\descript{GPA 3.59/4}
 \sectionsep
 \subsection{\fontsize{10pt}{10pt}\selectfont{Cambridge University}}
 \descript{Overseas study tour}
@@ -93,14 +94,9 @@
 \descript{Bachelor of Engineering}
 \descript{Major: IoT Engineering}
 \location{2016.09$\sim$2020.09}
+\descript{GPA 81.69/100}
 \sectionsep
 
-\section{Transcript}
-\begin{tabular*}{\linewidth}{lr@{\extracolsep{\fill}}c@{\extracolsep{\fill}}l}
-    GPA(BEng)&3.59&/&4 \\
-    GPA(MSc)&81.69&/&100 \\
-\end{tabular*}
-\sectionsep
 \section{English}
 \begin{tabular}{ll}
     IELTS & 6.5 \\
@@ -134,10 +130,10 @@ Blog:\href{http://www.yindaheng98.top}{\bf yindaheng98.top} \\
 \descript{2021.06$\sim$currently}
 \vspace{\topsep}
 \begin{tightemize}
-    \item Derived a parallel-friendly DNN architecture from multi-scale feature extraction structure for better multi-device acceleration in edge environment. % OK
-    \item Dimensionally compressed and int8 quantized intermediate features of the DNN and encoded features into video for transmission among multiple devices. % OK
+    \item Derived a parallel-friendly DNN architecture from a multi-scale feature extraction structure for better multi-device acceleration in the edge environment. % OK
+    \item Dimensionally compressed and int8 quantized intermediate features of the DNN and encoded features into a video stream for transmission among multiple devices. % OK
     \item Enhance the video decoder to combine low-framerate high-definition stream and high-framerate low-definition stream into high-framerate high-definition streams for smooth video playback when frame-by-frame super-resolution inference is not supported. % OK
-    \item Control the inference process adaptively based on the variable batch size of DNN input and enhanced video decoder to achieve best video quality under a specific latency bound in dynamic edge environments.
+    \item Control the inference process adaptively based on the variable batch size of DNN input and enhanced video decoder to achieve the best video quality under a specific latency bound in dynamic edge environments.
     \item Implement low-latency video stream routing and dynamic topology control across multiple devices based on WebRTC.
     \item Related paper \textit{D. Yin et al., "WAEVSR: Enabling collaborative live video super-resolution in wide-area MEC environment,"} is submitted to WWW 2023
 \end{tightemize}
@@ -145,10 +141,10 @@ Blog:\href{http://www.yindaheng98.top}{\bf yindaheng98.top} \\
 
 
 \section{Cooperated Research \& Development}
-\runsubsection{Adaptively computational routing based on environment awareness in Compute First Network (CFN)}
+\runsubsection{Adaptively computational routing based on environmental awareness in Compute First Network (CFN)}
 \descript{2020.10$\sim$2020.12}
 \begin{tightemize}
-    \item Optimize the strategy of: 1) DNN layer segmentation for distributed deployment, 2) computing device selection, 3) data transmission path selection.
+    \item Optimize the strategy of 1) DNN layer segmentation for distributed deployment, 2) computing device selection, 3) data transmission path selection.
     \item My contribution: Development of DNN inference control testbed (\href{https://github.com/yindaheng98/DNet}{DNet}), which can schedule and synchronize inference process among multiple computing devices.
     \item Related paper: \textit{X. Guo et al., "Exploiting the computational path diversity with in-network computing for MEC," 2022 19th Annual IEEE International Conference on Sensing, Communication, and Networking (SECON), 2022, pp. 1-9.}
 \end{tightemize}
@@ -161,17 +157,17 @@ Blog:\href{http://www.yindaheng98.top}{\bf yindaheng98.top} \\
 \begin{tightemize}
     \item Quantize a speech recognition DNN WeNet and a super-resolution DNN ELAN to FLOAT16 and INT8 using TensorRT.
     \item Implement FLOAT16 BatchNorm as a TensorRT plugin to replace native TensorRT BatchNorm kernel with precision issues.
-    \item Search and omit the quantization on those layers that have the significant impact on precision in FLOAT16 quantized ELAN structure, which decrease the error by 75\% and have similiar speedup.
+    \item Search and omit the quantization on those layers that have a significant impact on precision in FLOAT16 quantized ELAN structure, which decreases the error by 75\% and has a similar speedup.
     \item Quantized ELAN to INT8 with QAT, which achieved 2$\times$ speedup.
     \item Github: \href{https://github.com/liu-mengyang/trt-wenet}{github.com/liu-mengyang/trt-wenet} and \href{https://github.com/liu-mengyang/trt-elan}{github.com/liu-mengyang/trt-elan}
 \end{tightemize}
 \sectionsep
 
-\runsubsection{\bf Contest TensorRT Hackathon 2021 \quad 3rd Prize}
+\runsubsection{\bf Contest TensorRT Hackathon 2021 \quad Ranking 4/48}
 \descript{2021.03$\sim$2021.5}
 \location{NVIDIA | Alibaba Cloud TIANCHI}
 \begin{tightemize}
-    \item Quantize a multi object tracking DNN FairMOT to FLOAT16 and INT8 using TensorRT.
+    \item Quantize a multi-object tracking DNN FairMOT to FLOAT16 and INT8 using TensorRT.
     \item Implement FLOAT16 DCNv2 kernel as a TensorRT plugin, which achieved 2.36$\times$ speedup.
     \item Import and align model parameters from Pytorch into TensorRT through API.
     \item Github: \href{https://github.com/liu-mengyang/trt-fairmot}{github.com/liu-mengyang/trt-fairmot}
@@ -188,4 +184,4 @@ Blog:\href{http://www.yindaheng98.top}{\bf yindaheng98.top} \\
 \sectionsep
 
 \end{minipage} 
-\end{document}  \documentclass[]{article}
+\end{document}
