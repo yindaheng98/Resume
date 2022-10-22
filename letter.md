@@ -12,12 +12,16 @@ Realizing this system is challenging but fascinating, and I have gained a great 
 
 ## Why I believe you would be a suitable supervisor
 
+Our neural-enhanced live video streaming system is bottlenecked by the performance of the model inference latency. None of the typical super-resolution models (EDVR, TDAN, BasicVSR, etc) can achieve the desired latency even with intensive optimization. To break through this bottleneck, optimization on super-resolution model is the primary focus of my master's thesis, and will still be the focus of further research.
+
+I believe your expertise in deep learning algorithms will help me excel in this field. and my proposed research also aligns well with your ongoing research agenda. I know your group research is focused on the foundation, optimization and application of deep learning algorithms and has a long-term accumulation of video processing. Your paper "Compressed Video Contrastive Learning" has helped me comprehending the content in the compressed video and how it relates to the raw video frames, and has motivated my exploration on utilizing the information in compressed video for super-resolution. Your paper "Compression of Generative Pre-trained Language Models via Quantization" has inspired me to investigate the distribution of features and parameters to understand the form of quantization losses and obtain better quantization performance. My further research on video super-resolution model optimization will also explore the linkage among compressed video, quantization and video super-resolution.
+
 This is why your lab immediately becomes my target when I decide to apply for Ph.D.
 
-It would be my pleasure to discuss research topics with you, as well as the value and strength I can bring.
-Please find attached CV. I look forward to hearing from you.
+It would be my pleasure to discuss research topics with you, as well as the value and strength I can bring. I'm willing to share my detailed research plan if you are interested.
+Please find my attached CV or its online version.
 
-Be willing to share my detailed research plan if you are interested.
+I look forward to hearing from you.
 
 Kind regards,
 Daheng Yin
