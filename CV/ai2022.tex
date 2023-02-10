@@ -47,6 +47,7 @@
 
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
+\usepackage{graphicx}
     
 \pagestyle{fancy}
 \fancyhf{}
@@ -138,16 +139,19 @@ Blog:\href{http://www.yindaheng98.top}{\bf yindaheng98.top} \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Research \& Development}
-\runsubsection{Acclerate live video super-resolution with edge computing}
-\descript{2021.06$\sim$currently}
+\runsubsection{Collaborative live video super-resolution with edge computing}
+\descript{2021.06$\sim$now}
 \vspace{\topsep}
 \begin{tightemize}
-    \item Derived a parallel-friendly DNN architecture from a multi-scale feature extraction structure for better multi-device acceleration in the edge environment. % OK
-    \item Dimensionally compressed and int8 quantized intermediate features of the DNN and encoded features into a video stream for transmission among multiple devices. % OK
-    \item Enhance the video decoder to combine low-framerate high-definition stream and high-framerate low-definition stream into high-framerate high-definition streams for smooth video playback when frame-by-frame super-resolution inference is not supported. % OK
-    \item Control the inference process adaptively based on the variable batch size of DNN input and enhanced video decoder to achieve the best video quality under a specific latency bound in dynamic edge environments.
-    \item Implement low-latency video stream routing and dynamic topology control across multiple devices based on WebRTC.
-    \item Related paper \textit{D. Yin et al., "WAEVSR: Enabling collaborative live video super-resolution in wide-area MEC environment,"} is submitted to WWW 2023
+    \item A system research that leverage distributed computing resources to maximize the latency-bounded quality of live video super-resolution in edge computing environments.
+    \item Academic achievements: 
+    1) Proposed a parallel-optimized DNN architecture to improve multi-device acceleration in edge computing environments. % OK
+    2) Designed a distributed inference schedule mechanism based on adaptive batch size to optimize content quality and latency of distributed inference.
+    \item Engineering achievements: 
+    1) Low-latency video stream routing and dynamic topology control across multiple devices based on WebRTC.
+    2) Dimensional compression and int8 quantization of intermediate features to reduce transmission latency of distributed inference. % OK
+    3) SR-integrated decoder based on LibVPX to accelerate video super-resolution using compressed video information.
+    \item Related paper \textit{D. Yin et al., "WAEVSR: Enabling collaborative live video super-resolution in wide-area MEC environment,"} rejected by WWW 2023 and now editing for IWQoS 2023
 \end{tightemize}
 \sectionsep
 
@@ -157,7 +161,7 @@ Blog:\href{http://www.yindaheng98.top}{\bf yindaheng98.top} \\
 \descript{2020.10$\sim$2020.12}
 \begin{tightemize}
     \item Optimize the strategy of 1) DNN layer segmentation for distributed deployment, 2) computing device selection, 3) data transmission path selection.
-    \item My contribution: Development of DNN inference control testbed (\href{https://github.com/yindaheng98/DNet}{DNet}), which can schedule and synchronize inference process among multiple computing devices.
+    \item My contribution: Development of DNN inference control testbed (\href{https://github.com/yindaheng98/DNet}{DNet}), schedule and synchronize inference process among multiple computing devices.
     \item Related paper: \textit{X. Guo et al., "Exploiting the computational path diversity with in-network computing for MEC," 2022 19th Annual IEEE International Conference on Sensing, Communication, and Networking (SECON), 2022, pp. 1-9.}
 \end{tightemize}
 \sectionsep
@@ -167,10 +171,10 @@ Blog:\href{http://www.yindaheng98.top}{\bf yindaheng98.top} \\
 \descript{2022.03$\sim$2022.5}
 \location{NVIDIA | Alibaba Cloud TIANCHI}
 \begin{tightemize}
-    \item Quantize a speech recognition DNN WeNet and a super-resolution DNN ELAN to FLOAT16 and INT8 using TensorRT.
-    \item Implement FLOAT16 BatchNorm as a TensorRT plugin to replace native TensorRT BatchNorm kernel with precision issues.
-    \item Search and omit the quantization on those layers that have a significant impact on precision in FLOAT16 quantized ELAN structure, which decreases the error by 75\% and has a similar speedup.
-    \item Quantized ELAN to INT8 with QAT, which achieved 2$\times$ speedup.
+    \item Quantized a speech recognition DNN WeNet and a super-resolution DNN ELAN to FLOAT16 and INT8 using TensorRT.
+    \item Fixed the precision issue of FLOAT16 BatchNorm by implementing a TensorRT plugin.
+    \item Optimized FLOAT16 quantization of ELAN by omitting layers with significant impact on precision, reducing error by 75\%.
+    \item Achieving 2x speedup by quantizing ELAN to INT8 with QAT.
     \item Github: \href{https://github.com/liu-mengyang/trt-wenet}{github.com/liu-mengyang/trt-wenet} and \href{https://github.com/liu-mengyang/trt-elan}{github.com/liu-mengyang/trt-elan}
 \end{tightemize}
 \sectionsep
@@ -179,8 +183,8 @@ Blog:\href{http://www.yindaheng98.top}{\bf yindaheng98.top} \\
 \descript{2021.03$\sim$2021.5}
 \location{NVIDIA | Alibaba Cloud TIANCHI}
 \begin{tightemize}
-    \item Quantize a multi-object tracking DNN FairMOT to FLOAT16 and INT8 using TensorRT.
-    \item Implement FLOAT16 DCNv2 kernel as a TensorRT plugin, which achieved 2.36$\times$ speedup.
+    \item Quantized a multi-object tracking DNN FairMOT to FLOAT16 and INT8 using TensorRT.
+    \item Implement FLOAT16 DCNv2 kernel as a TensorRT plugin, resulting in a 2.36$\times$ speedup.
     \item Import and align model parameters from Pytorch into TensorRT through API.
     \item Github: \href{https://github.com/liu-mengyang/trt-fairmot}{github.com/liu-mengyang/trt-fairmot}
 \end{tightemize}
