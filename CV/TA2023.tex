@@ -48,6 +48,7 @@
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
 \usepackage{graphicx}
+\usepackage{multirow}
     
 \pagestyle{fancy}
 \fancyhf{}
@@ -66,7 +67,7 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Yin}{Daheng}{ \urlstyle{same}\href{mailto:yindaheng98@seu.edu.cn}{yindaheng98@seu.edu.cn} | +86 188 5189 9135 | Southeast University, Nanjing, Jiangsu}
+\namesection{Daheng}{Yin}{ \urlstyle{same}\href{mailto:daheng\_yin@sfu.ca}{daheng\_yin@sfu.ca} | Simon Fraser University}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -81,6 +82,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Education} 
+\subsection{Simon Fraser U}
+\descript{Computing Science PhD}
+\location{2023.09$\sim$}
+\sectionsep
 \subsection{Southeast University}
 \descript{Master of Engineering}
 \descript{Major: Computer Science}
@@ -190,15 +195,15 @@ Blog:\href{http://www.yindaheng98.top}{\bf yindaheng98.top} \\
 \end{tightemize}
 \sectionsep
 
-\section{Contest \& Scholarship During Undergraduate} 
-\begin{tabular}{lll}
-    2020.06 & Outstanding Graduate of Jiangnan University & \\
-    2018.09 & National College Mathematical Contest in Modeling & 2nd Prize(National) \\
-    2017.11 & 9th National College Mathematical Contest & 2nd Prize(Provincial) \\
-    2017.11 & China National Scholarship (2016-2017) & \\
-    2017.05 & 14th Jiangsu College Mathematical Contest & 1st Prize\\
+\section{Some Web Projects} 
+
+\newcommand{\proj}[4]{\multirow{2}{*}{#1} & \href{#2}{\bf #3}\\ & #4\vspace{5pt}\\}
+\begin{tabular}{llll}
+    \proj{2022.06$\sim$now}{https://github.com/yindaheng98/dblp-crawler}{github.com/yindaheng98/dblp-crawler}{Asynchronous dblp data collector and analyser.}
+    \proj{2019.03$\sim$2019.05}{https://github.com/yindaheng98/ExpertField}{github.com/yindaheng98/ExpertField}{Collect and show field data collection. From Android and STM32 devices\\&9 cooperators, nearly 10,000 lines of code, a complete IoT system.}
+    \proj{2018.11$\sim$2018.12}{https://github.com/yindaheng98/iQRGenuine}{github.com/yindaheng98/iQRGenuine}{Cloud-based anti-fake system.}
+    \proj{2018.12$\sim$2019.03}{https://github.com/yindaheng98/WebSiteAnalysisKit}{github.com/yindaheng98/WebSiteAnalysisKit}{A user behavior analysis platform based on Hadoop.}
 \end{tabular}
-\sectionsep
 
 \end{minipage} 
 \end{document}
