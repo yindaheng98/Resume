@@ -1,0 +1,121 @@
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+\namesection{Daheng}{Yin}{
+  \urlstyle{same}\href{mailto:daheng\_yin@sfu.ca}{daheng\_yin@sfu.ca}
+  | Simon Fraser University, Burnaby, Canada
+}
+
+\begin{minipage}[t]{0.24\textwidth}
+
+\section{Education}
+\subsection{Simon Fraser Univ.}
+\descript{Ph.D. in Computing Science}
+\descript{Advisor: Prof. Jiangchuan Liu}
+\location{2023.08 -- Present}
+\sectionsep
+
+\subsection{Southeast Univ.}
+\descript{M.Eng. in Computer Science}
+\descript{Advisor: Prof. Fang Dong}
+\location{2020.08 -- 2023.07}
+\sectionsep
+
+\subsection{Jiangnan Univ.}
+\descript{B.Eng. in IoT Engineering}
+\descript{Advisor: Prof. Ya Guo}
+\location{2016.08 -- 2020.07}
+\descript{GPA: 3.63, Rank 9/141}
+\sectionsep
+
+\section{Research Areas}
+\textbullet{} Volumetric Video Streaming \\
+\textbullet{} Dynamic 3D Reconstruction \\
+\textbullet{} Embodied AI Systems \\
+\sectionsep
+
+\section{Links}
+Homepage: \href{https://www.yindaheng98.top}{\bf yindaheng98.top} \\
+Github: \href{https://github.com/yindaheng98}{\bf @yindaheng98}
+\sectionsep
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.74\textwidth}
+
+\section{Research Profile}
+\sectionsep
+\begin{tightemize}
+  \item I design practical systems for photorealistic volumetric video reconstruction and transmission, targeting downstream applications in 3D scene understanding, embodied intelligence, and immersive volumetric telepresence.
+\end{tightemize}
+\sectionsep
+
+\section{Selected Publications}
+\runsubsection{TrackerSplat: Exploiting Point Tracking for Fast and Robust Dynamic 3D Gaussians Reconstruction}
+\descript{SIGGRAPH Asia, 2025}
+\begin{tightemize}
+  \item \textbf{Daheng Yin}, Isaac Ding, Yili Jin, Jianxin Shi, Jiangchuan Liu
+  \item Core idea: use multi-view point tracking to move Gaussians before optimization, making dynamic 3D reconstruction robust under large inter-frame motion.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{FSVFG: Towards Immersive Full-Scene Volumetric Video Streaming with Adaptive Feature Grid}
+\descript{ACM Multimedia, 2024}
+\begin{tightemize}
+  \item \textbf{Daheng Yin}, Jianxin Shi, Miao Zhang, Zhaowu Huang, Jiangchuan Liu, Fang Dong
+  \item Core idea: represent full-scene volumetric video with feature grids and stream only the most useful features/residuals adaptively to match bandwidth.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{WAEVSR: Collaborative Live Video Super-Resolution in Wide-Area MEC Environment}
+\descript{IEEE/ACM IWQoS, 2023}
+\begin{tightemize}
+  \item \textbf{Daheng Yin}, Fang Dong, Baijun Chen, Dian Shen, Ruiting Zhou, Xiaolin Guo, Zhaowu Huang
+  \item Core idea: jointly optimize distributed edge inference and low-latency transmission to deliver real-time super-resolution video under resource constraints.
+\end{tightemize}
+\sectionsep
+
+\section{Research \& Engineering Experience}
+
+\runsubsection{Fast and Robust Dynamic 3D Gaussian Reconstruction}
+\descript{2024 -- Present}
+\begin{tightemize}
+  \item Developed point-tracking guided Gaussian motion compensation to handle large inter-frame displacement in dynamic scenes.
+  \item Built a multi-view, multi-GPU pipeline for motion-accurate reconstruction with improved throughput and temporal consistency.
+  \item Improved reconstruction robustness for downstream tasks that require reliable motion cues, including embodied scene understanding and simulation-oriented pipelines.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Adaptive Full-Scene Volumetric Video Streaming}
+\descript{2023 -- Present}
+\begin{tightemize}
+  \item Built adaptive streaming pipelines for dynamic full-scene 3D video using feature-grid and Gaussian-based representations.
+  \item Designed bandwidth adaptation mechanisms (LoD, residual scheduling, and ABR) to optimize quality-latency trade-offs in real networks.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Collaborative Live Video Super-Resolution}
+\descript{2021 -- 2023}
+\begin{tightemize}
+  \item Distributed edge inference scheduling and low-latency multimedia transmission.
+  \item This work established my systems foundation for later research on volumetric video transmission.
+\end{tightemize}
+\sectionsep
+
+\section{Contests \& Honors}
+\begin{tabular}{lll}
+2025 & SIGGRAPH Asia Volumetric Video Workshop & Compression Track 3rd Prize \\
+2022 & TensorRT Hackathon (NVIDIA \& TIANCHI) & Winner Prize \\
+2021 & TensorRT Hackathon (NVIDIA \& TIANCHI) & Rank 4/48 \\
+2020 & Outstanding Graduate, Jiangnan University & \\
+2017 & China National Scholarship & \\
+\end{tabular}
+\sectionsep
+
+\end{minipage}
+\end{document}
