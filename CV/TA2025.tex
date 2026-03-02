@@ -1,0 +1,156 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{multirow}
+    
+\pagestyle{fancy}
+\fancyhf{}
+    
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Daheng}{Yin}{ \urlstyle{same}\href{mailto:daheng\_yin@sfu.ca}{daheng\_yin@sfu.ca} | Simon Fraser University}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.22\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\subsection{Simon Fraser U}
+\descript{Computing Science PhD}
+\descript{Supervisor: \\Prof. \href{https://www.cs.sfu.ca/~jcliu/}{Jiangchuan Liu}}
+\location{2023.09$\sim$}
+\sectionsep
+\subsection{Southeast University}
+\descript{Computer Science}
+\descript{Master of Engineering}
+\descript{Supervisor: \\Prof. \href{https://cse.seu.edu.cn/2023/1024/c23024a469532/page.htm}{Fang Dong}}
+\location{2020.09$\sim$2023.06}
+\descript{GPA 81.69/100}
+\sectionsep
+\subsection{Jiangnan University}
+\descript{IoT Engineering}
+\descript{Bachelor of Engineering}
+\location{2016.09$\sim$2020.09}
+\descript{GPA 3.59/4}
+\sectionsep
+
+\section{Links}
+Github\href{https://github.com/yindaheng98}{\bf @yindaheng98} \\
+Blog:\href{http://www.yindaheng98.top}{\bf yindaheng98.top} \\
+\sectionsep
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.77\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research \& Development}
+\runsubsection{Adaptive Full-Scene Volumetric Video Streaming}
+\descript{2023.09$\sim$}
+\vspace{\topsep}
+\begin{tightemize}
+    \item A system research that leverage distributed computing resources to maximize the latency-bounded quality of live video super-resolution in edge computing environments.
+    \item Academic achievements: 
+    \item Related paper: \textit{D. Yin et al., "TrackerSplat: Exploiting Point Tracking for Fast and Robust Dynamic 3D Gaussians Reconstruction," SIGGRAPH Asia 2025}
+    \item Related paper: \textit{B. Chen et al., "FSVFG: Towards Immersive Full-Scene Volumetric Video Streaming with Adaptive Feature Grid," MM 2024}
+\end{tightemize}
+\runsubsection{Live video super-resolution with edge computing}
+\descript{2021.06$\sim$2023.09}
+\vspace{\topsep}
+\begin{tightemize}
+    \item A system research that leverage distributed computing resources to maximize the latency-bounded quality of live video super-resolution in edge computing environments.
+    \item Academic achievements: 
+    1) Proposed a parallel-optimized DNN architecture to improve multi-device acceleration in edge computing environments. % OK
+    2) Designed a distributed inference schedule mechanism based on adaptive batch size to optimize content quality and latency of distributed inference.
+    \item Engineering achievements: 
+    1) Low-latency video stream routing and dynamic topology control across multiple devices based on WebRTC.
+    2) Dimensional compression and int8 quantization of intermediate features to reduce transmission latency of distributed inference. % OK
+    3) SR-integrated decoder based on LibVPX to accelerate video super-resolution using compressed video information.
+    \item Related paper: \textit{D. Yin et al., "WAEVSR: Enabling collaborative live video super-resolution in wide-area MEC environment," IWQoS 2023}
+    \item Related paper: \textit{B. Chen et al., "HyperRTV: Neural-Enhanced Adaptive Real-Time Video Streaming Based on Terminal-Edge Collaboration," CSCWD 2023}
+\end{tightemize}
+\sectionsep
+
+
+\section{Cooperated Research \& Development}
+\runsubsection{Adaptively computational routing based on environmental awareness in Compute First Network (CFN)}
+\descript{2020.10$\sim$2020.12}
+\begin{tightemize}
+    \item Optimize the strategy of 1) DNN layer segmentation for distributed deployment, 2) computing device selection, 3) data transmission path selection.
+    \item My contribution: Development of DNN inference control testbed (\href{https://github.com/yindaheng98/DNet}{DNet}), schedule and synchronize inference process among multiple computing devices.
+    \item Related paper: \textit{X. Guo et al., "Exploiting the computational path diversity with in-network computing for MEC," 2022 19th Annual IEEE International Conference on Sensing, Communication, and Networking (SECON), 2022, pp. 1-9.}
+\end{tightemize}
+\sectionsep
+
+\end{minipage} 
+\end{document}
