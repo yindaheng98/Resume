@@ -1,0 +1,127 @@
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+\namesection{尹}{达恒}{
+  \urlstyle{same}\href{mailto:daheng\_yin@sfu.ca}{daheng\_yin@sfu.ca}
+  | Simon Fraser University, Burnaby, Canada
+}
+
+\begin{minipage}[t]{0.24\textwidth}
+
+\section{教育经历}
+\subsection{Simon Fraser Univ.}
+\descript{计算科学 博士在读}
+\descript{导师：刘江川}
+\location{2023.08 -- 至今}
+\sectionsep
+
+\subsection{东南大学}
+\descript{计算机科学与技术 硕士学位}
+\descript{导师：东方}
+\location{2020.08 -- 2023.07}
+\sectionsep
+
+\subsection{江南大学}
+\descript{物联网工程 学士学位}
+\descript{导师：郭亚}
+\location{2016.08 -- 2020.07}
+\descript{GPA: 3.63, Rank 9/141}
+\sectionsep
+
+\section{研究方向}
+\textbullet{} 体积视频传输 \\
+\textbullet{} 动态三维重建 \\
+\textbullet{} 具身智能系统 \\
+\sectionsep
+
+\section{链接}
+Homepage: \href{https://www.yindaheng98.top}{\bf yindaheng98.top} \\
+Github: \href{https://github.com/yindaheng98}{\bf @yindaheng98}
+\sectionsep
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.74\textwidth}
+
+\section{研究概述}
+\sectionsep
+\begin{tightemize}
+  \item 我致力于构建面向照片级体积视频重建与传输的实用系统，服务于三维场景理解、具身\\智能与沉浸式体积视频通信等下游应用。
+  \item 近期工作聚焦于自适应体积视频流传输与快速稳健动态3D高斯重建，提升运动场景的\\时序一致性、重建效率与传输质量。
+\end{tightemize}
+\sectionsep
+
+\section{代表性论文}
+\runsubsection{TrackerSplat: Exploiting Point Tracking for Fast and Robust Dynamic 3D Gaussians Reconstruction}
+\descript{SIGGRAPH Asia, 2025}
+\begin{tightemize}
+  \item \textbf{Daheng Yin}, Isaac Ding, Yili Jin, Jianxin Shi, Jiangchuan Liu
+  \item 核心思想：利用点跟踪先验引导高斯椭球运动，提升动态场景重建的稳健性与效率。
+\end{tightemize}
+\sectionsep
+
+\runsubsection{FSVFG: Towards Immersive Full-Scene Volumetric Video Streaming with Adaptive Feature Grid}
+\descript{ACM Multimedia, 2024}
+\begin{tightemize}
+  \item \textbf{Daheng Yin}, Jianxin Shi, Miao Zhang, Zhaowu Huang, Jiangchuan Liu, Fang Dong
+  \item 核心思想：以特征网格表示全景体积视频，并按带宽自适应传输关键特征与帧间\\残差，实现高效体积视频流传输。
+\end{tightemize}
+\sectionsep
+
+\runsubsection{WAEVSR: Collaborative Live Video Super-Resolution in Wide-Area MEC Environment}
+\descript{IEEE/ACM IWQoS, 2023}
+\begin{tightemize}
+  \item \textbf{Daheng Yin}, Fang Dong, Baijun Chen, Dian Shen, Ruiting Zhou, Xiaolin Guo, Zhaowu Huang
+  \item 核心思想：联合优化分布式边缘推理与低时延传输机制，在资源受限环境中实现实时\\视频超分辨率协同推理。
+\end{tightemize}
+\sectionsep
+
+\section{科研与工程经历}
+
+\runsubsection{Fast and Robust Dynamic 3D Gaussian Reconstruction}
+\descript{2024 -- 至今}
+\begin{tightemize}
+  \item 设计基于点跟踪的高斯运动补偿方法，解决动态场景帧间位移导致的重建退化问题。
+  \item 搭建多视角多GPU并行重建流程，在保持时序一致性的同时提升重建吞吐。
+  \item 面向下游任务增强运动线索可靠性，支持具身场景理解与仿真相关应用。
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Adaptive Full-Scene Volumetric Video Streaming}
+\descript{2023 -- 至今}
+\begin{tightemize}
+  \item 构建基于特征网格与高斯表示的全场景动态体视频自适应传输系统。
+  \item 设计LoD、残差调度与ABR机制，在真实网络波动下优化画质与时延平衡。
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Collaborative Live Video Super-Resolution}
+\descript{2021 -- 2023}
+\begin{tightemize}
+  \item 开展分布式边缘推理调度与低时延多媒体传输研究。
+  \item 为后续体视频重建与传输方向提供了系统基础与工程经验。
+\end{tightemize}
+\sectionsep
+
+\section{竞赛与荣誉}
+\begin{tabular}{lll}
+2025 & SIGGRAPH Asia Volumetric Video Workshop & 视频压缩方向 三等奖 \\
+2022 & TensorRT Hackathon (NVIDIA \& TIANCHI) & 优胜奖 \\
+2021 & TensorRT Hackathon (NVIDIA \& TIANCHI) & 排名 4/48 \\
+2020 & 江南大学优秀毕业生 & \\
+2018.11 & 江南大学2017-2018学年一等学业奖学金 &  \\
+2018.09 & 2018年全国大学生数学建模竞赛 & 二等奖 \\
+2017.11 & 第九届全国大学生数学竞赛 & 二等奖 \\
+2017.11 & 2016-2017年度国家奖学金 & \\
+2017.05 & 江苏省普通高等学校第十四届数学竞赛 & 一等奖 \\
+2017.03 & 入选江南大学至善学院（荣誉学院）& \\
+\end{tabular}
+\sectionsep
+
+\end{minipage}
+\end{document}
