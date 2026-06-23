@@ -61,7 +61,7 @@ Github: \href{https://github.com/yindaheng98}{\bf @yindaheng98}
 \descript{SIGGRAPH, 2026}
 \begin{tightemize}
   \item \textbf{Daheng Yin}, Yili Jin, Jianxin Shi, Isaac Ding, Miao Zhang, Fangxin Wang, Zhaowu Huang, Cong Zhang, Jiangchuan Liu, Fang Dong
-  \item 针对动态三维实景在弱网环境下的实时传输问题，提出面向3DGS体积视频流传输的色彩自适应机制：通过向量量化构建多层级LoD表示，并利用低分辨率参考图在客户端恢复量化造成的色彩失真，使动态三维实景在带宽波动下仍能保持高质量传输和低时延交互。
+  \item 针对动态三维实景在弱网环境下的实时传输难题，提出面向3DGS体积视频流传输的色彩自适应机制：通过向量量化构建多层级LoD表示，并利用低分辨率参考图在客户端修复量化引起的色彩失真，从而在带宽波动下仍能保证动态三维实景的高保真、低时延传输与交互。
 \end{tightemize}
 \sectionsep
 
@@ -69,7 +69,7 @@ Github: \href{https://github.com/yindaheng98}{\bf @yindaheng98}
 \descript{SIGGRAPH Asia, 2025}
 \begin{tightemize}
   \item \textbf{Daheng Yin}, Isaac Ding, Yili Jin, Jianxin Shi, Jiangchuan Liu
-  \item 核心思想：利用点跟踪先验引导高斯椭球运动，提升动态场景重建的稳健性与效率。
+  \item 面向快速运动场景的高性能动态三维实景重建：引入点追踪轨迹作为运动先验，将跨帧像素轨迹映射到3D Gaussians，引导其平移、旋转与尺度补偿，从而减少动态重建中的漂移、伪影和时序闪烁，同时提升多GPU并行重建的吞吐量。
 \end{tightemize}
 \sectionsep
 
@@ -77,7 +77,7 @@ Github: \href{https://github.com/yindaheng98}{\bf @yindaheng98}
 \descript{ACM Multimedia, 2024}
 \begin{tightemize}
   \item \textbf{Daheng Yin}, Jianxin Shi, Miao Zhang, Zhaowu Huang, Jiangchuan Liu, Fang Dong
-  \item 核心思想：以特征网格表示全景体积视频，并按带宽自适应传输关键特征与帧间\\残差，实现高效体积视频流传输。
+  \item 面向弱网环境下的大范围三维实景自适应传输：采用自适应特征网格来表示大范围体积视频，并结合LoD选择与帧间残差过滤，根据可用带宽动态决定优先传输的场景内容与细节层级，从而在大场景覆盖、视觉质量和传输开销之间取得平衡。
 \end{tightemize}
 \sectionsep
 
