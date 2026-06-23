@@ -25,8 +25,11 @@
 
 % Set main fonts
 \usepackage{fontspec}
+\usepackage{xeCJK}
 \setmainfont[Color=primary, Path = fonts/source-han-serif/,BoldItalicFont=SourceHanSerifSC-Bold,BoldFont=SourceHanSerifSC-Bold,ItalicFont=SourceHanSerifSC-Bold]{SourceHanSerifSC-Regular}
+\setCJKmainfont[Color=primary, Path = fonts/source-han-serif/,BoldItalicFont=SourceHanSerifSC-Bold,BoldFont=SourceHanSerifSC-Bold,ItalicFont=SourceHanSerifSC-Bold]{SourceHanSerifSC-Regular}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/source-han-sans/]{SourceHanSansSC-ExtraLight}
+\setCJKsansfont[Scale=MatchLowercase, Path = fonts/source-han-sans/]{SourceHanSansSC-ExtraLight}
 
 % Date command
 \usepackage[absolute]{textpos}
@@ -81,4 +84,3 @@ Last Updated on \today
 \newenvironment{tightemize}{
 \vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}
-
