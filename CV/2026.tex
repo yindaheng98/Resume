@@ -56,11 +56,19 @@ Github: \href{https://github.com/yindaheng98}{\bf @yindaheng98}
 \sectionsep
 
 \section{Selected Publications}
+\runsubsection{CAGS: Color-Adaptive Volumetric Video Streaming with Dynamic 3D Gaussian Splatting}
+\descript{SIGGRAPH, 2026}
+\begin{tightemize}
+  \item \textbf{Daheng Yin}, Yili Jin, Jianxin Shi, Isaac Ding, Miao Zhang, Fangxin Wang, Zhaowu Huang, Cong Zhang, Jiangchuan Liu, Fang Dong
+  \item We propose color-adaptive 3DGS streaming for remote physical environments: compresses dynamic 3DGS volumetric video into vector-quantized LoD representations and restores color fidelity on the client, preserving photorealistic access under fluctuating bandwidth.
+\end{tightemize}
+\sectionsep
+
 \runsubsection{TrackerSplat: Exploiting Point Tracking for Fast and Robust Dynamic 3D Gaussians Reconstruction}
 \descript{SIGGRAPH Asia, 2025}
 \begin{tightemize}
   \item \textbf{Daheng Yin}, Isaac Ding, Yili Jin, Jianxin Shi, Jiangchuan Liu
-  \item Core idea: use multi-view point tracking to move Gaussians before optimization, making dynamic 3D reconstruction robust under large inter-frame motion.
+  \item High-performance dynamic 3D scene reconstruction for fast-moving scenes with point tracking: lifts cross-frame point trajectories onto 3D Gaussians and guides their translation, rotation, and scale compensation, reducing drift, artifacts, and temporal flickering.
 \end{tightemize}
 \sectionsep
 
@@ -68,42 +76,7 @@ Github: \href{https://github.com/yindaheng98}{\bf @yindaheng98}
 \descript{ACM Multimedia, 2024}
 \begin{tightemize}
   \item \textbf{Daheng Yin}, Jianxin Shi, Miao Zhang, Zhaowu Huang, Jiangchuan Liu, Fang Dong
-  \item Core idea: represent full-scene volumetric video with feature grids and stream only the most useful features/residuals adaptively to match bandwidth.
-\end{tightemize}
-\sectionsep
-
-\runsubsection{WAEVSR: Collaborative Live Video Super-Resolution in Wide-Area MEC Environment}
-\descript{IEEE/ACM IWQoS, 2023}
-\begin{tightemize}
-  \item \textbf{Daheng Yin}, Fang Dong, Baijun Chen, Dian Shen, Ruiting Zhou, Xiaolin Guo, Zhaowu Huang
-  \item Core idea: jointly optimize distributed edge inference and low-latency transmission to deliver real-time super-resolution video under resource constraints.
-\end{tightemize}
-\sectionsep
-
-\section{Research \& Engineering Experience}
-
-\runsubsection{Fast and Robust Dynamic 3D Gaussian Reconstruction}
-\descript{2024 -- Present}
-\begin{tightemize}
-  \item Developed point-tracking guided Gaussian motion compensation to handle large inter-frame displacement in dynamic scenes.
-  \item Built a multi-view, multi-GPU pipeline for motion-accurate reconstruction with improved throughput and temporal consistency.
-  \item Improved reconstruction robustness for downstream tasks that require reliable motion cues, including embodied scene understanding and simulation-oriented pipelines.
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Adaptive Full-Scene Volumetric Video Streaming}
-\descript{2023 -- Present}
-\begin{tightemize}
-  \item Built adaptive streaming pipelines for dynamic full-scene 3D video using feature-grid and Gaussian-based representations.
-  \item Designed bandwidth adaptation mechanisms (LoD, residual scheduling, and ABR) to optimize quality-latency trade-offs in real networks.
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Collaborative Live Video Super-Resolution}
-\descript{2021 -- 2023}
-\begin{tightemize}
-  \item Distributed edge inference scheduling and low-latency multimedia transmission.
-  \item This work established my systems foundation for later research on volumetric video transmission.
+  \item Adaptive feature-grid streaming for large-scale full-scene volumetric video: represents wide-area dynamic scenes with compact feature grids and selectively transmits features and residuals, balancing scene coverage, visual quality, and transmission cost.
 \end{tightemize}
 \sectionsep
 
