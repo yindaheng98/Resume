@@ -49,25 +49,34 @@ Last Updated on \today
 \color{headings}
 \fontspec[Path = fonts/source-sans-pro/]{SourceSansPro-Regular}\fontsize{11pt}{11pt}\selectfont #3}
 \noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}}
-\vspace{-15pt}
+\vspace{-12pt}
+\enlargethispage{\baselineskip}
+\nopagebreak[4]
 }
 
 % Section seperators 
 \usepackage{titlesec}
-\titlespacing{\section}{0pt}{0pt}{0pt} 
-\titlespacing{\subsection}{0pt}{0pt}{0pt}
-\newcommand{\sectionsep}{\vspace{8pt}}
+\usepackage{enumitem}
+\newlength{\cvsectionsep}
+\setlength{\cvsectionsep}{4pt}
+\newlength{\cventrysep}
+\setlength{\cventrysep}{2pt}
+\titlespacing{\section}{0pt}{\cvsectionsep}{0pt}
+\titlespacing{\subsection}{0pt}{\cventrysep}{0pt}
+\newcommand{\sectionsep}{}
+\setlength{\topsep}{0pt}
+\setlist[itemize]{itemsep=1pt, topsep=0pt, partopsep=0pt, parsep=0pt}
 
 % Headings command
 \titleformat{\section}{\color{headings}
-\fontspec[Path = fonts/source-serif-pro/]{SourceSerifPro-Bold}\fontsize{16pt}{24pt}\selectfont \raggedright}{}{0em}{}
+\fontspec[Path = fonts/source-serif-pro/]{SourceSerifPro-Bold}\fontsize{16pt}{18pt}\selectfont \raggedright}{}{0em}{}
 
 % Subeadings command
 \titleformat{\subsection}{
 \color{subheadings}\fontspec[Path = fonts/source-serif-pro/]{SourceSerifPro-Bold}\fontsize{12pt}{12pt}\selectfont\bfseries}{}{0em}{}
 
 \newcommand{\runsubsection}[1]{
-\color{subheadings}\fontspec[Path = fonts/source-serif-pro/]{SourceSerifPro-Bold}\fontsize{12pt}{12pt}\selectfont\bfseries {#1} \normalfont}
+\par\addvspace{\cventrysep}\noindent\color{subheadings}\fontspec[Path = fonts/source-serif-pro/]{SourceSerifPro-Bold}\fontsize{12pt}{12pt}\selectfont\bfseries {#1} \normalfont}
 
 % Descriptors command
 \newcommand{\descript}[1]{
@@ -79,5 +88,5 @@ Last Updated on \today
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{
-\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
-{\end{itemize}\vspace{-\topsep}}
+\begin{itemize}}
+{\end{itemize}}
